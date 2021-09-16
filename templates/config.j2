@@ -1,0 +1,10 @@
+---
+client:
+  hosts: {{ elasticsearch_curator_hosts | to_yaml | trim }}
+
+logging:
+  loglevel: {{ elasticsearch_curator_log_level }}
+  logformat: {{ elasticsearch_curator_log_format }}
+  blacklist: {{ elasticsearch_curator_log_blacklist | to_yaml | trim }}
+
+...

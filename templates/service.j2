@@ -1,0 +1,11 @@
+[Unit]
+Description=Elasticsearch Curator
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/environment
+
+ExecStart=/usr/local/bin/curator /root/.curator/actions.yml
+
+[Install]
+WantedBy=multi-user.target

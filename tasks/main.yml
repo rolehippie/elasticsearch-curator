@@ -1,0 +1,86 @@
+# Standards: 1.2
+---
+- name: Install pip package
+  package:
+    name: python3-pip
+    state: present
+  tags:
+    - elasticsearch-curator
+
+- name: Install curator pip
+  pip:
+    name: elasticsearch-curator
+    state: present
+    version: "{{ elasticsearch_curator_version }}"
+  tags:
+    - elasticsearch-curator
+
+- name: Create config directory
+  file:
+    path: /root/.curator
+    owner: root
+    group: root
+    mode: u=rwX,g=rX,o=
+    state: directory
+  tags:
+    - elasticsearch-curator
+
+- name: Write general config
+  notify:
+    - Restart curator
+  template:
+    src: config.j2
+    dest: /root/.curator/curator.yml
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=
+  tags:
+    - elasticsearch-curator
+
+- name: Write actions config
+  notify:
+    - Restart curator
+  template:
+    src: actions.j2
+    dest: /root/.curator/actions.yml
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=
+  tags:
+    - elasticsearch-curator
+
+- name: Write timer file
+  notify:
+    - Restart curator
+  template:
+    src: timer.j2
+    dest: /etc/systemd/system/curator.timer
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - elasticsearch-curator
+
+- name: Write service file
+  notify:
+    - Restart curator
+  template:
+    src: service.j2
+    dest: /etc/systemd/system/curator.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - elasticsearch-curator
+
+- name: Start curator timer
+  systemd:
+    name: curator.timer
+    state: started
+    daemon_reload: True
+    masked: False
+    enabled: True
+  tags:
+    - elasticsearch-curator
+
+...

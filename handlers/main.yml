@@ -1,0 +1,10 @@
+# Standards: 1.2
+---
+- name: Restart curator
+  loop: "{{ ['timer', 'service'] if elasticsearch_curator_restart_service else ['timer'] }}"
+  systemd:
+    name: "curator.{{ item }}"
+    state: restarted
+    daemon_reload: True
+
+...

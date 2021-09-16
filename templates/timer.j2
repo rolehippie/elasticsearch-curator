@@ -1,0 +1,9 @@
+[Unit]
+Description=Elasticsearch Curator
+
+[Timer]
+OnCalendar={{ elasticsearch_curator_interval }}
+Persistent=true
+
+[Install]
+WantedBy=timers.target
