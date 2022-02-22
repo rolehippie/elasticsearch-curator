@@ -17,6 +17,7 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
   * [elasticsearch_curator_enabled](#elasticsearch_curator_enabled)
   * [elasticsearch_curator_hosts](#elasticsearch_curator_hosts)
   * [elasticsearch_curator_interval](#elasticsearch_curator_interval)
+  * [elasticsearch_curator_library](#elasticsearch_curator_library)
   * [elasticsearch_curator_log_blacklist](#elasticsearch_curator_log_blacklist)
   * [elasticsearch_curator_log_format](#elasticsearch_curator_log_format)
   * [elasticsearch_curator_log_level](#elasticsearch_curator_log_level)
@@ -102,6 +103,16 @@ Interval to execute service
 
 ```YAML
 elasticsearch_curator_interval: daily
+```
+
+### elasticsearch_curator_library
+
+Optionally use a downgraded version of elasticsearch library
+
+#### Default value
+
+```YAML
+elasticsearch_curator_library:
 ```
 
 ### elasticsearch_curator_log_blacklist

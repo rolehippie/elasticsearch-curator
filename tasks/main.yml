@@ -12,6 +12,15 @@
       tags:
         - elasticsearch-curator
 
+    - name: Install elasticsearch pip
+      when: elasticsearch_curator_library | default(False)
+      pip:
+        name: elasticsearch
+        state: present
+        version: "{{ elasticsearch_curator_library }}"
+      tags:
+        - elasticsearch-curator
+
     - name: Install curator pip
       pip:
         name: elasticsearch-curator

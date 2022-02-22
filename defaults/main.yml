@@ -7,6 +7,9 @@ elasticsearch_curator_enabled: True
 # renovate: datasource=pypi depName=elasticsearch-curator
 elasticsearch_curator_version: 5.8.4
 
+# @var elasticsearch_curator_library:description: Optionally use a downgraded version of elasticsearch library
+elasticsearch_curator_library:
+
 # @var elasticsearch_curator_hosts:description: List of elasticsearch hosts
 # @var elasticsearch_curator_hosts:example: >
 # elasticsearch_curator_hosts:
