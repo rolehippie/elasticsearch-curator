@@ -14,6 +14,7 @@ Building and improving this Ansible role have been sponsored by my employer **Pr
 
 * [Default Variables](#default-variables)
   * [elasticsearch_curator_actions](#elasticsearch_curator_actions)
+  * [elasticsearch_curator_enabled](#elasticsearch_curator_enabled)
   * [elasticsearch_curator_hosts](#elasticsearch_curator_hosts)
   * [elasticsearch_curator_interval](#elasticsearch_curator_interval)
   * [elasticsearch_curator_log_blacklist](#elasticsearch_curator_log_blacklist)
@@ -62,6 +63,16 @@ elasticsearch_curator_actions:
         timestring: '%Y.%m.%d'
         unit: months
         unit_count: 1
+```
+
+### elasticsearch_curator_enabled
+
+Enable installation and configuration
+
+#### Default value
+
+```YAML
+elasticsearch_curator_enabled: true
 ```
 
 ### elasticsearch_curator_hosts

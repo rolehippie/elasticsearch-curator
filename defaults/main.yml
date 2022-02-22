@@ -1,5 +1,8 @@
 # Standards: 1.2
 ---
+# @var elasticsearch_curator_enabled:description: Enable installation and configuration
+elasticsearch_curator_enabled: True
+
 # @var elasticsearch_curator_version:description: Version to install
 # renovate: datasource=pypi depName=elasticsearch-curator
 elasticsearch_curator_version: 5.8.4
