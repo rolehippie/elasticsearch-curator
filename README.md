@@ -1,31 +1,32 @@
 # elasticsearch-curator
 
-[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/elasticsearch-curator) [![Testing Build](https://github.com/rolehippie/elasticsearch-curator/workflows/testing/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/elasticsearch-curator/workflows/readme/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/elasticsearch-curator/workflows/galaxy/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/elasticsearch-curator)](https://github.com/rolehippie/elasticsearch-curator/blob/master/LICENSE) 
+[![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/elasticsearch-curator) [![Testing Build](https://github.com/rolehippie/elasticsearch-curator/workflows/testing/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions?query=workflow%3Atesting) [![Readme Build](https://github.com/rolehippie/elasticsearch-curator/workflows/readme/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions?query=workflow%3Areadme) [![Galaxy Build](https://github.com/rolehippie/elasticsearch-curator/workflows/galaxy/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions?query=workflow%3Agalaxy) [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/elasticsearch-curator)](https://github.com/rolehippie/elasticsearch-curator/blob/master/LICENSE)
 
-Ansible role to install and configure Elasticsearch curator and index lifecycle management. 
+Ansible role to install and configure Elasticsearch curator and index lifecycle management.
 
-## Sponsor 
+## Sponsor
 
-[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu) 
+[![Proact Deutschland GmbH](https://proact.eu/wp-content/uploads/2020/03/proact-logo.png)](https://proact.eu)
 
 Building and improving this Ansible role have been sponsored by my employer **Proact Deutschland GmbH**.
 
 ## Table of content
 
-* [Default Variables](#default-variables)
-  * [elasticsearch_curator_actions](#elasticsearch_curator_actions)
-  * [elasticsearch_curator_enabled](#elasticsearch_curator_enabled)
-  * [elasticsearch_curator_hosts](#elasticsearch_curator_hosts)
-  * [elasticsearch_curator_interval](#elasticsearch_curator_interval)
-  * [elasticsearch_curator_library](#elasticsearch_curator_library)
-  * [elasticsearch_curator_log_blacklist](#elasticsearch_curator_log_blacklist)
-  * [elasticsearch_curator_log_format](#elasticsearch_curator_log_format)
-  * [elasticsearch_curator_log_level](#elasticsearch_curator_log_level)
-  * [elasticsearch_curator_restart_service](#elasticsearch_curator_restart_service)
-  * [elasticsearch_curator_version](#elasticsearch_curator_version)
-* [Dependencies](#dependencies)
-* [License](#license)
-* [Author](#author)
+- [Default Variables](#default-variables)
+  - [elasticsearch_curator_actions](#elasticsearch_curator_actions)
+  - [elasticsearch_curator_enabled](#elasticsearch_curator_enabled)
+  - [elasticsearch_curator_hosts](#elasticsearch_curator_hosts)
+  - [elasticsearch_curator_interval](#elasticsearch_curator_interval)
+  - [elasticsearch_curator_library](#elasticsearch_curator_library)
+  - [elasticsearch_curator_log_blacklist](#elasticsearch_curator_log_blacklist)
+  - [elasticsearch_curator_log_format](#elasticsearch_curator_log_format)
+  - [elasticsearch_curator_log_level](#elasticsearch_curator_log_level)
+  - [elasticsearch_curator_restart_service](#elasticsearch_curator_restart_service)
+  - [elasticsearch_curator_version](#elasticsearch_curator_version)
+- [Discovered Tags](#discovered-tags)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Author](#author)
 
 ---
 
@@ -165,9 +166,14 @@ Version to install
 elasticsearch_curator_version: 5.8.4
 ```
 
+## Discovered Tags
+
+**_elasticsearch-curator_**
+
+
 ## Dependencies
 
-* None
+- None
 
 ## License
 
