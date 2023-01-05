@@ -2,7 +2,21 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    elasticsearch_node_name: host01
+    elasticsearch_cluster_name: dummy
+    elasticsearch_curator_restart_service: False
+    elasticsearch_curator_interval: weekly
+    elasticsearch_curator_hosts:
+      - localhost:9200
+    elasticsearch_curator_actions:
+      1:
+        action: create_index
+        description: Create dummy index
+        options:
+          name: snapshot-%Y%m%d%H%M%S
   roles:
+    - role: rolehippie.elasticsearch
     - role: rolehippie.elasticsearch_curator
 
 ...
