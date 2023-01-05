@@ -2,6 +2,6 @@
 ---
 collections: []
 roles:
-  - rolehippie.elasticsearch
+  - name: rolehippie.elasticsearch
 
 ...
