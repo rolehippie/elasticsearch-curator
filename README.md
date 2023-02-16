@@ -166,7 +166,7 @@ Version to install
 #### Default value
 
 ```YAML
-elasticsearch_curator_version: 8.0.1
+elasticsearch_curator_version: 8.0.2
 ```
 
 ## Discovered Tags
