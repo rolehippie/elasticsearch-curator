@@ -7,7 +7,7 @@
 # [![Readme Workflow](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/readme.yml/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/readme.yml)
 # [![Galaxy Workflow](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/galaxy.yml)
 # [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/elasticsearch-curator)](https://github.com/rolehippie/elasticsearch-curator/blob/master/LICENSE)
-# [![Ansible Role](https://img.shields.io/ansible/role/56252)](https://galaxy.ansible.com/rolehippie/elasticsearch-curator)
+# [![Ansible Role](https://img.shields.io/badge/role-rolehippie.elasticsearch-curator-blue)](https://galaxy.ansible.com/rolehippie/elasticsearch-curator)
 #
 # Ansible role to install and configure Elasticsearch curator and index lifecycle management.
 #
