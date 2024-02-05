@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 - name: Install if enabled
   when: elasticsearch_curator_enabled
