@@ -1,4 +1,3 @@
-# Standards: 1.2
 ---
 # @var elasticsearch_curator_enabled:description: Enable installation and configuration
 elasticsearch_curator_enabled: True
