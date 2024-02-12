@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.0.0](https://github.com/rolehippie/elasticsearch-curator/compare/v2.0.5...v3.0.0) (2024-02-12)
+
+
+### Features
+
+* drop support for ubuntu 18.04 ([bd5209b](https://github.com/rolehippie/elasticsearch-curator/commit/bd5209b2a683f46215c54692d7e6845795305e80))
+* used full qualified collection names ([712ee6f](https://github.com/rolehippie/elasticsearch-curator/commit/712ee6f759d4bd3b849cf78a75e1c86f0037f706))
+
 ## [2.0.5](https://github.com/rolehippie/elasticsearch-curator/compare/v2.0.4...v2.0.5) (2024-02-05)
 
 
