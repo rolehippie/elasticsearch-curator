@@ -4,7 +4,7 @@ elasticsearch_curator_enabled: True
 
 # @var elasticsearch_curator_version:description: Version to install
 # renovate: datasource=pypi depName=elasticsearch-curator
-elasticsearch_curator_version: 8.0.13
+elasticsearch_curator_version: 8.0.14
 
 # @var elasticsearch_curator_library:description: Optionally use a downgraded version of elasticsearch library
 elasticsearch_curator_library:
