@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.3](https://github.com/rolehippie/elasticsearch-curator/compare/v3.0.2...v3.0.3) (2024-04-22)
+
+
+### Bugfixes
+
+* **deps:** update dependency elasticsearch-curator to v8.0.15 ([dfd225e](https://github.com/rolehippie/elasticsearch-curator/commit/dfd225e2518d113b6debf02ff5912b8defd12174))
+
 ## [3.0.2](https://github.com/rolehippie/elasticsearch-curator/compare/v3.0.1...v3.0.2) (2024-04-08)
 
 
