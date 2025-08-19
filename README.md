@@ -1,4 +1,4 @@
-# elasticsearch-curator
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/elasticsearch-curator)
 [![General Workflow](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/general.yml)
@@ -177,7 +177,6 @@ elasticsearch_curator_version: 8.0.21
 ## Discovered Tags
 
 **_elasticsearch-curator_**
-
 
 ## Dependencies
 
