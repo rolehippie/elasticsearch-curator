@@ -15,7 +15,7 @@
 # Building and improving this Ansible role have been sponsored by my current and previous employers like **[Cloudpunks GmbH](https://cloudpunks.de)** and **[Proact Deutschland GmbH](https://www.proact.eu)**.
 # @end
 # @meta dependencies:value: >
-# None
+# [rolehippie.elasticsearch](https://github.com/rolehippie/elasticsearch)
 # @end
 galaxy_info:
   role_name: elasticsearch_curator
@@ -29,6 +29,7 @@ galaxy_info:
       versions:
         - focal
         - jammy
+        - noble
   galaxy_tags:
     - elasticsearch
     - curator

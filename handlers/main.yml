@@ -4,6 +4,6 @@
   ansible.builtin.systemd:
     name: "curator.{{ item }}"
     state: restarted
-    daemon_reload: True
+    daemon_reload: true
 
 ...

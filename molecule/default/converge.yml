@@ -4,7 +4,7 @@
   vars:
     elasticsearch_node_name: host01
     elasticsearch_cluster_name: dummy
-    elasticsearch_curator_restart_service: False
+    elasticsearch_curator_restart_service: false
     elasticsearch_curator_interval: weekly
     elasticsearch_curator_hosts:
       - localhost:9200

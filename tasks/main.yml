@@ -1,30 +1,46 @@
 ---
 - name: Install if enabled
-  when: elasticsearch_curator_enabled
+  when:
+    - elasticsearch_curator_enabled
   tags:
     - elasticsearch-curator
   block:
-    - name: Install pip package
+    - name: Install required packages
+      loop:
+        - python3-pip
+        - python3-virtualenv
       ansible.builtin.package:
-        name: python3-pip
+        name: "{{ item }}"
         state: present
       tags:
         - elasticsearch-curator
 
-    - name: Install elasticsearch pip
-      when: elasticsearch_curator_library | default(False)
+    - name: Install elasticsearch lib
+      when:
+        - false if elasticsearch_curator_library is none else (elasticsearch_curator_library | length > 0)
       ansible.builtin.pip:
         name: elasticsearch
         state: present
         version: "{{ elasticsearch_curator_library }}"
+        virtualenv: "{{ elasticsearch_curator_venv_path }}"
       tags:
         - elasticsearch-curator
 
-    - name: Install curator pip
+    - name: Install curator package
       ansible.builtin.pip:
         name: elasticsearch-curator
         state: present
         version: "{{ elasticsearch_curator_version }}"
+        virtualenv: "{{ elasticsearch_curator_venv_path }}"
+      tags:
+        - elasticsearch-curator
+
+    - name: Symlink venv executable
+      ansible.builtin.file:
+        src: "{{ elasticsearch_curator_venv_path }}/bin/curator"
+        dest: /usr/local/bin/curator
+        state: link
+        force: true
       tags:
         - elasticsearch-curator
 
@@ -90,9 +106,9 @@
       ansible.builtin.systemd:
         name: curator.timer
         state: started
-        daemon_reload: True
-        masked: False
-        enabled: True
+        daemon_reload: true
+        masked: false
+        enabled: true
       tags:
         - elasticsearch-curator
 

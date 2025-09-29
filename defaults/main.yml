@@ -1,10 +1,13 @@
 ---
 # @var elasticsearch_curator_enabled:description: Enable installation and configuration
-elasticsearch_curator_enabled: True
+elasticsearch_curator_enabled: true
 
 # @var elasticsearch_curator_version:description: Version to install
 # renovate: datasource=pypi depName=elasticsearch-curator
 elasticsearch_curator_version: 8.0.21
+
+# @var elasticsearch_curator_venv_path:description: Path to venv for the pip installation
+elasticsearch_curator_venv_path: /usr/local/share/elasticsearch-curator
 
 # @var elasticsearch_curator_library:description: Optionally use a downgraded version of elasticsearch library
 elasticsearch_curator_library:
@@ -28,8 +31,8 @@ elasticsearch_curator_hosts: []
 #       prefixed indices. Ignore the error if the filter does not result in an
 #       actionable list of indices (ignore_empty_list) and exit cleanly.
 #     options:
-#       ignore_empty_list: True
-#       disable_action: True
+#       ignore_empty_list: true
+#       disable_action: true
 #     filters:
 #       - filtertype: pattern
 #         kind: prefix
@@ -58,6 +61,6 @@ elasticsearch_curator_log_blacklist:
 elasticsearch_curator_interval: daily
 
 # @var elasticsearch_curator_restart_service:description: Restart timer and service or only timer
-elasticsearch_curator_restart_service: True
+elasticsearch_curator_restart_service: true
 
 ...

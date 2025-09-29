@@ -1,4 +1,4 @@
-# workspace
+# elasticsearch-curator
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/elasticsearch-curator)
 [![General Workflow](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/elasticsearch-curator/actions/workflows/general.yml)
@@ -61,8 +61,8 @@ elasticsearch_curator_actions:
       prefixed indices. Ignore the error if the filter does not result in an
       actionable list of indices (ignore_empty_list) and exit cleanly.
     options:
-      ignore_empty_list: True
-      disable_action: True
+      ignore_empty_list: true
+      disable_action: true
     filters:
       - filtertype: pattern
         kind: prefix
@@ -180,7 +180,7 @@ elasticsearch_curator_version: 8.0.21
 
 ## Dependencies
 
-- None
+- [rolehippie.elasticsearch](https://github.com/rolehippie/elasticsearch)
 
 ## License
 

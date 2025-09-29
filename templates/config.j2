@@ -1,7 +1,7 @@
 ---
 client:
   hosts:
-    {{ elasticsearch_curator_hosts | from_yaml | to_nice_yaml(indent=2) | indent(width=4) | trim }}
+    {{ elasticsearch_curator_hosts | to_nice_yaml(indent=2) | indent(width=4) | trim }}
 
 logging:
   loglevel: {{ elasticsearch_curator_log_level }}
