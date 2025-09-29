@@ -26,6 +26,7 @@ Building and improving this Ansible role have been sponsored by my current and p
   - [elasticsearch_curator_log_format](#elasticsearch_curator_log_format)
   - [elasticsearch_curator_log_level](#elasticsearch_curator_log_level)
   - [elasticsearch_curator_restart_service](#elasticsearch_curator_restart_service)
+  - [elasticsearch_curator_venv_path](#elasticsearch_curator_venv_path)
   - [elasticsearch_curator_version](#elasticsearch_curator_version)
 - [Discovered Tags](#discovered-tags)
 - [Dependencies](#dependencies)
@@ -162,6 +163,16 @@ Restart timer and service or only timer
 
 ```YAML
 elasticsearch_curator_restart_service: true
+```
+
+### elasticsearch_curator_venv_path
+
+Path to venv for the pip installation
+
+#### Default value
+
+```YAML
+elasticsearch_curator_venv_path: /usr/local/share/elasticsearch-curator
 ```
 
 ### elasticsearch_curator_version
