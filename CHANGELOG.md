@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/rolehippie/elasticsearch-curator/compare/v3.0.8...v3.1.0) (2025-09-30)
+
+
+### Features
+
+* apply new repo structure and update linting and integrate noble ([d4bf80c](https://github.com/rolehippie/elasticsearch-curator/commit/d4bf80c7e90cb5b9feabae7138f59dd595ab97d4))
+
 ## [3.0.8](https://github.com/rolehippie/elasticsearch-curator/compare/v3.0.7...v3.0.8) (2025-04-07)
 
 
