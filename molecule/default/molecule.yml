@@ -34,18 +34,6 @@ platforms:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     environment:
       container: docker
-  - name: elasticsearch-curator-ubuntu-20
-    image: docker.io/geerlingguy/docker-ubuntu2004-ansible:latest
-    hostname: ubuntu
-    privileged: true
-    pre_build_image: true
-    override_command: false
-    cgroupns_mode: host
-    systemd: always
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:rw
-    environment:
-      container: docker
 
 provisioner:
   name: ansible
