@@ -1,5 +1,13 @@
 # Changelog
 
+## [4.0.0](https://github.com/rolehippie/elasticsearch-curator/compare/v3.1.0...v4.0.0) (2025-10-13)
+
+
+### Features
+
+* drop support for ubuntu 20.04, python is too old ([a833127](https://github.com/rolehippie/elasticsearch-curator/commit/a83312706c69ea6a867f08ee22257ca4cb813598))
+* **major:** update dependency elasticsearch-curator to v9 ([#40](https://github.com/rolehippie/elasticsearch-curator/issues/40)) ([8954d94](https://github.com/rolehippie/elasticsearch-curator/commit/8954d941a419574528b684d2cacefebd5b71d4ba))
+
 ## [3.1.0](https://github.com/rolehippie/elasticsearch-curator/compare/v3.0.8...v3.1.0) (2025-09-30)
 
 
