@@ -1,5 +1,7 @@
 # Changelog
 
+## [4.1.0](https://github.com/rolehippie/elasticsearch-curator/compare/v4.0.0...v4.1.0) (2026-07-27)
+
 ## [4.0.0](https://github.com/rolehippie/elasticsearch-curator/compare/v3.1.0...v4.0.0) (2025-10-13)
 
 
