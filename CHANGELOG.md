@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.3.0](https://github.com/rolehippie/elasticsearch-curator/compare/v4.2.0...v4.3.0) (2026-08-17)
+
+### Dependencies
+
+* **minor:** update dependency pipx:ansible-lint to v26.8.0 ([#69](https://github.com/rolehippie/elasticsearch-curator/issues/69)) ([aca3d33](https://github.com/rolehippie/elasticsearch-curator/commit/aca3d333522586d91def2148e3148b9badd3fd9d))
+* **minor:** update dependency pipx:molecule to v26.8.0 ([#70](https://github.com/rolehippie/elasticsearch-curator/issues/70)) ([1f4d7c4](https://github.com/rolehippie/elasticsearch-curator/commit/1f4d7c4159c13466fa08462794de0e0f71faaa9a))
+* **patch:** update dependency pipx:ansible-core to v2.21.3 ([#67](https://github.com/rolehippie/elasticsearch-curator/issues/67)) ([7145e38](https://github.com/rolehippie/elasticsearch-curator/commit/7145e3865bd8b125c03ffcbedddd543124af1681))
+* **patch:** update dependency pre-commit to v4.6.2 ([#68](https://github.com/rolehippie/elasticsearch-curator/issues/68)) ([b9a00f6](https://github.com/rolehippie/elasticsearch-curator/commit/b9a00f6bdf0234660bf2c54b5ef40cd6b3e833d5))
+
 ## [4.2.0](https://github.com/rolehippie/elasticsearch-curator/compare/v4.1.0...v4.2.0) (2026-08-10)
 
 ### Dependencies
