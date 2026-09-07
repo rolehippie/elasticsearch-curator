@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.4.0](https://github.com/rolehippie/elasticsearch-curator/compare/v4.3.1...v4.4.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([3e18154](https://github.com/rolehippie/elasticsearch-curator/commit/3e18154f88720a15b032fcf431dd3d0a51545bb1))
+
 ## [4.3.1](https://github.com/rolehippie/elasticsearch-curator/compare/v4.3.0...v4.3.1) (2026-08-31)
 
 ### Dependencies
